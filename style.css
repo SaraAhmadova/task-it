@@ -1,6 +1,6 @@
 .container{
     box-sizing: border-box;
-    
+    width: fit-content;
     margin: 96px;
     border: 0.2px solid #000000;
   
