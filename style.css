@@ -1,0 +1,90 @@
+.container{
+    box-sizing: border-box;
+    
+    margin: 96px;
+    border: 0.2px solid #000000;
+  
+    display: flex;
+    
+}
+.container .box{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 112px;
+    width: 120px;
+    border: 0.2px solid #000000;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+.container .box.double{
+    width: 240px;
+}
+.box.h-2{
+    height: 224px!important;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.double.h-2{
+    background-color: orange;
+}
+.double.reverted{
+    /* height: 240px; */
+    width: 120px!important;
+    height: 224px;
+
+}
+.box-onehalf{
+    width: 180px !important;
+}
+textarea{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+}
+textarea::placeholder{
+    padding: 10px;
+    font-size: 18px;
+    font-family: Calibri;
+    color: #000000;
+}
+textarea.left-rotate{
+    transform: rotate(90deg);
+    width: 224px!important;
+    height: 120px;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+}
+.container .row{
+    display: flex;
+    position: relative;
+}
+.box.green{
+    background-color: lightgreen;
+}
+.box.text{
+    height: 50px;
+    width: 112px;
+    border: .2px solid #000000;
+    color: red;
+    padding: 10px;
+    text-align: center;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -31px;
+    bottom: 31px;
+}
+.box.left-part{
+    width: calc(100% - 50px)!important;
+    margin-left: 50px;
+}
